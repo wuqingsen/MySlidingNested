@@ -1,18 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <com.example.qd.myslidingnested.utils.MyCoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:text="标题"
+                            android:textColor="#FF171717"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/tvTitle"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_one" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/iv_one"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_one" />
+
+                    </RelativeLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <com.example.qd.myslidingnested.utils.MyNestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/mybehavior">
+
+                <com.example.qd.myslidingnested.utils.VerticalLinearLayout
+                    android:id="@+id/NestedVerLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/smartTabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:overScrollMode="never"
+                        app:stl_defaultTabTextHorizontalPadding="24dp"
+                        app:stl_dividerColor="@android:color/transparent"
+                        app:stl_indicatorThickness="0dp"
+                        app:stl_underlineThickness="0dp"
+                        app:tabBackground="@color/white"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabMode="scrollable" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.example.qd.myslidingnested.utils.VerticalLinearLayout>
+            </com.example.qd.myslidingnested.utils.MyNestedScrollView>
+        </com.example.qd.myslidingnested.utils.MyCoordinatorLayout>
+
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

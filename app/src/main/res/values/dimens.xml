@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="h6">14sp</dimen>
+    <dimen name="maxHeadTopHeight">180dp</dimen>
+    <dimen name="minHeadTopHeight">75dp</dimen>
+    <dimen name="searchBarHiight">50dp</dimen>
+    <dimen name="searchBarScale">20dp</dimen>
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="textScale">1sp</dimen>
+    <dimen name="headHeight">217dp</dimen>
+    <dimen name="maxMarginBottom">30dp</dimen>
+    <dimen name="marginBottomScale">20dp</dimen>
+    <dimen name="marginLeft">12dp</dimen>
+    <dimen name="maxLimit">105dp</dimen>
+    <dimen name="minLimit">50dp</dimen>
+</resources>
