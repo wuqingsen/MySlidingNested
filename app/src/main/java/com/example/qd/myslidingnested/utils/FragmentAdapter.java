@@ -1,12 +1,14 @@
-package com.example.qd.myslidingnested;
+package com.example.qd.myslidingnested.utils;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
 
+import com.example.qd.myslidingnested.MyFragment;
+
 import java.util.List;
 
-public class FragmentAdapter extends BaseFragmentAdapter<MyFragment>{
+public class FragmentAdapter extends BaseFragmentAdapter<MyFragment> {
 
 
     public FragmentAdapter(FragmentManager fm, List<MyFragment> fragments) {

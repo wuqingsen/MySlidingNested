@@ -1,4 +1,4 @@
-package com.example.qd.myslidingnested;
+package com.example.qd.myslidingnested.utils;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

@@ -16,9 +16,9 @@ import android.view.ViewGroup;
 import com.andview.refreshview.XRefreshView;
 import com.coorchice.library.SuperTextView;
 import com.example.qd.myslidingnested.interfaces.AppBarLayoutObserved;
+import com.example.qd.myslidingnested.utils.FragmentAdapter;
 import com.example.qd.myslidingnested.utils.MyCoordinatorLayout;
 import com.example.qd.myslidingnested.utils.MyNestedScrollView;
-import com.example.qd.myslidingnested.utils.VerticalLinearLayout;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 import java.util.ArrayList;
@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity implements AppBarLayoutObser
     AppBarLayout appbarLayout;
     @BindView(R.id.nestedScrollView)
     MyNestedScrollView nestedScrollView;
-    @BindView(R.id.NestedVerLinearLayout)
-    VerticalLinearLayout NestedVerLinearLayout;
     @BindView(R.id.smartTabLayout)
     SmartTabLayout smartTabLayout;
     @BindView(R.id.viewPager)
