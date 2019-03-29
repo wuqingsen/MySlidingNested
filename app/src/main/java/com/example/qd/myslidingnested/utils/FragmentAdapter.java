@@ -7,7 +7,11 @@ import android.support.v4.app.FragmentManager;
 import com.example.qd.myslidingnested.MyFragment;
 
 import java.util.List;
-
+/**
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
+ */
 public class FragmentAdapter extends BaseFragmentAdapter<MyFragment> {
 
 

@@ -10,8 +10,9 @@ import android.widget.LinearLayout;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 /**
- * @author lmz14
- * @date 2018.8.20
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
  */
 public class VerticalLinearLayout extends LinearLayout {
 

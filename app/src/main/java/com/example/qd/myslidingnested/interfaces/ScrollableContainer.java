@@ -1,11 +1,10 @@
 package com.example.qd.myslidingnested.interfaces;
 
 import android.view.View;
-
 /**
- * @author linmeizhen
- * @date 2018/8/20
- * @description
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
  */
 public interface ScrollableContainer {
     View getScrollableView();

@@ -13,8 +13,9 @@ import android.view.View;
 import com.example.qd.myslidingnested.interfaces.ScrollableContainer;
 
 /**
- * @author lmz14
- * @date 2018.8.20
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
  */
 public class MyNestedScrollView extends NestedScrollView {
     public static final int STATUS_EXPANDED = 1;

@@ -4,7 +4,11 @@ import android.content.Context;
 import android.graphics.RectF;
 import android.util.DisplayMetrics;
 import android.view.View;
-
+/**
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
+ */
 public class Util {
     public static int getDevHeight(Context context){
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();

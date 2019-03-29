@@ -6,7 +6,11 @@ import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.view.View;
-
+/**
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
+ */
 public class MyBehavior extends AppBarLayout.ScrollingViewBehavior {
 
     public MyBehavior(){

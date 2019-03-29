@@ -15,9 +15,9 @@ import com.example.qd.myslidingnested.interfaces.AppBarLayoutObserved;
 import com.example.qd.myslidingnested.interfaces.ScrollableContainer;
 
 /**
- * @author linmeizhen
- * @date 2018/8/220
- * @description
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
  */
 public class MyCoordinatorLayout extends CoordinatorLayout {
     private final String TAG = "MyCoordinatorLayout";

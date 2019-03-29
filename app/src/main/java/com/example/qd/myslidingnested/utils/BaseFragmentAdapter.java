@@ -5,7 +5,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.List;
-
+/**
+ * author: wu
+ * date: on 2019/3/6.
+ * describe:
+ */
 public abstract class BaseFragmentAdapter<T extends Fragment> extends FragmentStatePagerAdapter {
 
     protected List<T> fragments;

@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements AppBarLayoutObser
 
     private void setListener() {
         xRefreshView.setPullRefreshEnable(true);
+        //为避免冲突，禁止上拉加载更多；上拉更多需要自己手动去写
         xRefreshView.setPullLoadEnable(false);
         //防止横向滑动冲突
         xRefreshView.setMoveForHorizontal(true);
@@ -178,7 +179,6 @@ public class MainActivity extends AppCompatActivity implements AppBarLayoutObser
 
     /**
      * setTitleStyle
-     *
      * @param isShowState true：显示对号；否则隐藏
      */
     private void setTitle(boolean isShowState, SuperTextView superTextView) {
