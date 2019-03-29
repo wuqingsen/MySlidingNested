@@ -14,6 +14,11 @@ import com.andview.refreshview.XRefreshView;
 import com.example.qd.myslidingnested.interfaces.AppBarLayoutObserved;
 import com.example.qd.myslidingnested.interfaces.ScrollableContainer;
 
+/**
+ * @author linmeizhen
+ * @date 2018/8/220
+ * @description
+ */
 public class MyCoordinatorLayout extends CoordinatorLayout {
     private final String TAG = "MyCoordinatorLayout";
     private AppBarLayoutObserved observed;

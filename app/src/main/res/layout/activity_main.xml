@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <com.andview.refreshview.XRefreshView
         android:id="@+id/xRefreshView"
@@ -28,7 +29,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white">
+                        android:background="@color/white"
+                        android:descendantFocusability="blocksDescendants">
 
                         <TextView
                             android:id="@+id/tvTitle"
@@ -43,15 +45,8 @@
                         <ImageView
                             android:id="@+id/iv_one"
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="180dp"
                             android:layout_below="@+id/tvTitle"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/icon_one" />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            android:layout_below="@+id/iv_one"
                             android:scaleType="fitXY"
                             android:src="@drawable/icon_one" />
 
@@ -97,4 +92,4 @@
         </com.example.qd.myslidingnested.utils.MyCoordinatorLayout>
 
     </com.andview.refreshview.XRefreshView>
-</LinearLayout>
+</RelativeLayout>
